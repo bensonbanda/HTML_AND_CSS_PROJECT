@@ -8,20 +8,56 @@
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
+    <div class="container">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+      <form action="#" id="survey-form">
+        <div>
+          <label for="" id="name-label">Name<input type="text" id="name" value="" placeholder="Enter your name" required></label>
+          <label for="" id="email-label">Email<input type="email" id="email" value="" placeholder="Enter your email"  required></label>
+          <label for="" id="number-label">Age<input type="number" name="number" id="number" min="10" max="100" placeholder="Age"></label>
+        </div>
+        <div>
+          <label for="">Which option best describes your current role?</label>
+          <select name="" id="dropdown">
+          <option value="student">select current:role</option>
+          <option value="student">Student</option>
+          <option value="student">Full Time Job</option>
+          <option value="student">Full Time Learner</option>
+          </select>
+        </div>
+        <div>
+          <label for="">Would you recommend freeCodeCamp to a friend?</label>
+          <label for=""><input type="radio">Definitely</label>
+          <label for=""><input type="radio">Maybe</label>
+          <label for=""><input type="radio">Not sure</label>
+        </div>
+        <div>
+          <label for="">What is your favorite feature of freeCodeCamp?</label>
+          <select name="#" id="#">
+            <option value="">Selec an option</option>
+            <option value="">Challenge</option>
+            <option value="">Projects</option>
+            <option value="">Community</option>
+          </select>
+        </div>
+        <div>
+          <label for="">What would you like to see improved? (Check all that apply)</label>
+          <label for=""><input type="checkbox">Front-end Projects</label>
+          <label for=""><input type="checkbox">Back-end Projects</label>
+          <label for=""><input type="checkbox">Data Visualization</label>
+          <label for=""><input type="checkbox">Challenges</label>
+          <label for=""><input type="checkbox">Open Source Community</label>
+        </div>
+        <div>
+          <p>Any comments or suggestions?</p>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+          <button id="submit">Submit</button>
+        </div>
+      </form>
+    </div>
     <script  src="js/index.js"></script>
-    <h1>Hello World!</h1>
   </body>
 </html>
